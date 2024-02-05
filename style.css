@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+body{
+    height: 95vh;
+    background-position: center;
+    color: white;
+    font-family: 'Muli';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    overflow: hidden;
+}
+img.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit:cover;
+    filter: blur(6px);
+    transform: scale(1.06);
+    z-index: -100;
+    width: 100vw;
+    background-color: black;
+    height: 100vh;
+}
+.active{
+    position: absolute;
+    transition: all .3s ease-in;
+    top: 0;
+    left: 0;
+    object-fit:cover;
+    filter: blur(0px);
+    transform: scale(1.04);
+    z-index: -100;
+    width: 100vw;
+    background-color: black;
+    height: 100vh;
+
+}
+.par1{
+    text-align: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container_active{
+    background-color: rgba(0,0,0,.7);
+    padding: 30px;
+    border-radius: 12px;
+}
+.fa-user{
+     background-color: white;
+     padding: 2rem;
+     color: black;
+     border-radius: 50%;
+     font-size: 50px;
+}
+.password_container{
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    gap: 10px;
+    width: 280px;
+    align-items: center;
+    justify-content: space-between;
+}
+.password_container input{
+    padding: .5rem .5rem;
+    border: none;
+    font-size: 16px;
+}
+
+.password_container input:focus{
+    outline: none;
+}
+.password_container .fa-arrow-right{
+background-color: rgb(27, 59, 240);
+padding: 12px 12px;
+cursor: pointer;
+overflow: hidden;
+}
+footer{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+.fa-eye, .fa-eye-slash{
+    color: rgb(85, 85, 85);
+    font-size: 12px;
+    cursor: pointer;
+}
+span{
+    cursor: pointer;
+}
+.fa-user{
+    margin-bottom:-14px;
+    font-size: 80px;
+}
+h2{
+    letter-spacing: 10px;
+    margin-bottom: 30px;
+}
